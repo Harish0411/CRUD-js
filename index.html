@@ -5,22 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-       form{
+       form,
+       h2{
         margin: 20px;
         text-align: center;
+       }
+       input{
+        padding: 10px 20px;
+        border: 1px solid #eee;
+        border-radius: 10px;
+       }
+       input:focus{
+        outline: 2px solid gold;
+       }
+       button{
+        padding: 7px 20px;
+        margin: 5px;
+        border: none;
+        background-color: gold;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+        border-radius: 10px;
+        text-transform: capitalize;
+        cursor: pointer;
        }
  
     </style>
 </head>
 <body>
     <!-- <canvas></canvas> -->
+    <h2>Student Details</h2>
    <form >
-    <input type="text" id="name" autofocus/><br><br>
-    <input type="number" id="mark"/><br><br>
+    <input type="text" id="name" placeholder="Enter student name"/><br><br>
+    <input type="number" id="mark" placeholder="Enter mark"/><br><br>
     <button type="submit">submit</button>
    
    </form>
-   <button type="button" id="btn">view userData</button>
+  <div style="text-align: center;"><button type="button" id="btn">view userData</button></div>
 
     <script src="main.js"></script>
 </body>

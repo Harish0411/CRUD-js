@@ -4,10 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        ul li{
+            list-style: none;
+            padding: 10px;
+            margin: 5px;
+            background-color: #FFECB3;
+            text-align: left;
+            color: #3E2723;
+         
+            
+        }
+        button{
+            border: none;
+            padding: 5px 10px;
+            background-color: #fff;
+            margin: 0 5px;
+            cursor: pointer;
+            text-transform: capitalize;
+        }
+        div > b{
+           
+            padding: 5px;
+        }
+      
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            text-align: center;
+        }
+        
+
+    </style>
 </head>
 <body>
+    <section>
+    <div class="container">
     <input type="text" placeholder="Search name..." id="search" onkeyup="handleSearch()"/>
     <h2>User details with marks</h2>
+    </div>
+    </section>
+
     <script src="main2.js"></script>
 </body>
 </html>

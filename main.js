@@ -11,6 +11,8 @@ var data = JSON.parse(localStorage.getItem('userData2')) || [];
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
+  if(name.value && mark.value){
+
   let obj = {
    name : name.value,
    mark :mark.value,
@@ -35,7 +37,7 @@ form.addEventListener('submit', (e) => {
   name.value = '';
   mark.value = '';
   name.focus();
-
+   }
 })
 
 document.querySelector('#btn').addEventListener('click', (e) => {
