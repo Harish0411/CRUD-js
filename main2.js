@@ -11,7 +11,7 @@ userData
     let list = document.createElement('li');
     list.setAttribute('class', 'listItem')
     list.innerHTML = `<div> 
-      <b>${e.name}</b> 
+      <b>${e.name} : ${e.mark}</b> 
       <button  id="delt_btn">delete</button>
       <button  id="edit">Edit</button>
      </div>`;
